@@ -26,24 +26,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "bef38d45163c2f1dde094a7dfd33ccf595c92905c8f8f4fdc18d06fb1037718a"
 
 [[package]]
-name = "cbindgen"
-version = "0.26.0"
-dependencies = [
- "clap",
- "heck",
- "indexmap",
- "log",
- "proc-macro2",
- "quote",
- "serde",
- "serde_json",
- "serial_test",
- "syn 1.0.109",
- "tempfile",
- "toml",
-]
-
-[[package]]
 name = "cfg-if"
 version = "1.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -353,6 +335,24 @@ name = "textwrap"
 version = "0.16.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "222a222a5bfe1bba4a77b45ec488a741b3cb8872e5e499451fd7d0129c9c7c3d"
+
+[[package]]
+name = "tfhe-c-api-bindgen"
+version = "0.26.0"
+dependencies = [
+ "clap",
+ "heck",
+ "indexmap",
+ "log",
+ "proc-macro2",
+ "quote",
+ "serde",
+ "serde_json",
+ "serial_test",
+ "syn 1.0.109",
+ "tempfile",
+ "toml",
+]
 
 [[package]]
 name = "toml"

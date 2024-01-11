@@ -70,7 +70,7 @@ jobs:
         CBINDGEN_TEST_VERIFY: 1
       run: |
         cargo +stable package --verbose
-        (cd target/package/cbindgen-$(cargo +stable run -- --version | cut -d ' ' -f 2) && cargo +stable test --verbose)
+        (cd target/package/tfhe-c-api-bindgen-$(cargo +stable run -- --version | cut -d ' ' -f 2) && cargo +stable test --verbose)
 
     - name: Install nightly Rust
       uses: dtolnay/rust-toolchain@nightly

@@ -1,3 +1,11 @@
+# DISCLAIMER THIS IS NOT THE OFFICIAL CBINDGEN CRATE
+
+This is a last ditch effort to have a version of cbindgen with a fix required for our project while waiting on a merge in the official repository.
+
+We are merely cloning the official cbindgen repo found here: https://github.com/mozilla/cbindgen
+
+We added a small patch we need to fix our C API generation in a setting where a dependency has the same name as our main crate. The metadata parsing will randomly select the wrong crate to expand/parse as the cargo metadata is likely loaded in a HashMap like struct, this branch has a fix just for that.
+
 # `cbindgen` &emsp; [![Build Status]][actions] [![Latest Version]][crates.io] [![Api Rustdoc]][rustdoc] [![Rust](https://img.shields.io/badge/rust-1.64%2B-blue.svg?maxAge=3600)](https://github.com/mozilla/cbindgen)
 
 [Build Status]: https://github.com/mozilla/cbindgen/workflows/cbindgen/badge.svg

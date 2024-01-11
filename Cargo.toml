@@ -1,6 +1,6 @@
 [package]
-name = "cbindgen"
-version = "0.26.0"
+name = "tfhe-c-api-bindgen"
+version = "0.26.1"
 authors = [
   "Emilio Cobos Álvarez <emilio@crisal.io>",
   "Jeff Muizelaar <jmuizelaar@mozilla.com>",
